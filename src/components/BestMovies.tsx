@@ -37,8 +37,9 @@ export default function BestMovies(){
 
   return(  
     <>
-      <div className="h-10 w-auto p-5 prose">
-        <h1>Melhores Filmes</h1>
+      <h1 className="text-4xl font-bold p-5 text-center">Melhores Filmes</h1>
+      <div className="p-5  flex flex- flex-wrap gap-5 ">
+      
         { 
         // verifica se topMovies é vazio ou nao
             topMovies &&
@@ -47,16 +48,21 @@ export default function BestMovies(){
             topMovies.map((movie)=>{
               return( 
                 <>
-                  <h3>{movie.title}</h3>
-                  <img className="w-4/5 h-auto" src={`${imageBase}${movie.backdrop_path}`} alt="" />
-                  <p>{movie.overview}</p>
-                  <MovieStatus rating={movie.vote_average} release={movie.release_date} /> 
+                  <div className="prose flex flex-col justify-between rounded-lg bg-gray-100 p-5">
+                    <h3 className="text-center text-xl font-bold">{movie.title}</h3>
+                    <img className="w-[400px] h-[200px]" src={`${imageBase}${movie.backdrop_path}`} alt="" />
+                    <p className="w-[400px] h-[200px] ">{movie.overview}</p>
+                    <MovieStatus rating={movie.vote_average} release={movie.release_date} /> 
+
+                  </div>
+
 
                 </>
               )
             })
         }
       </div>
+
       </>
   )
 }
