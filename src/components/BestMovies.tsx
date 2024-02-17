@@ -49,9 +49,9 @@ export default function BestMovies(){
               return( 
                 <>
                   <div className="prose flex w-[450px] h-[600px] flex-col  items-center  rounded-lg  border-[6px] border-zinc-200  p-5">
-                    <h3 className=" text-xl font-bold text-wrap">{movie.title}</h3>
-                    <img className="w-auto h-[250px] rounded" src={`${imageBase}${movie.backdrop_path}`} alt="" />
-                    <p className="w-[400px] h-[150px] text-left ">{movie.overview}</p>
+                    <h3 className=" text-2xl font-bold text-wrap">{movie.title}</h3>
+                    <img className="w-auto h-[300px] rounded" src={`${imageBase}${movie.backdrop_path}`} alt="" />
+                    <div className="w-[400px] h-[150px] text-left overflow-y-auto p-1 ">{movie.overview}</div>
                     <MovieStatus rating={movie.vote_average} release={movie.release_date} /> 
 
                   </div>
