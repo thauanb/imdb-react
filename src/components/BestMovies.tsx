@@ -48,10 +48,10 @@ export default function BestMovies(){
             topMovies.map((movie)=>{
               return( 
                 <>
-                  <div className="prose flex flex-col justify-between rounded-lg bg-gray-100 p-5">
-                    <h3 className="text-center text-xl font-bold">{movie.title}</h3>
-                    <img className="w-[400px] h-[200px]" src={`${imageBase}${movie.backdrop_path}`} alt="" />
-                    <p className="w-[400px] h-[200px] ">{movie.overview}</p>
+                  <div className="prose flex w-[450px] h-[600px] flex-col justify-around rounded-lg bg-gray-100 p-2">
+                    <h3 className=" text-xl font-bold text-wrap">{movie.title}</h3>
+                    <img className="w-[400px] h-[250px]" src={`${imageBase}${movie.backdrop_path}`} alt="" />
+                    <p className="w-[400px] h-[150px] text-left ">{movie.overview}</p>
                     <MovieStatus rating={movie.vote_average} release={movie.release_date} /> 
 
                   </div>
