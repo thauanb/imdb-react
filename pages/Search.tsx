@@ -1,6 +1,7 @@
+import React from 'react';
 
 export default function Search(){
   return(
-    <h2>Pesquisa</h2>
+    <h1>Pesquisa</h1>
   )
 }
