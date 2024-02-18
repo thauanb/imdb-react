@@ -1,5 +1,5 @@
-import BestMovies from "@/components/BestMovies"
 import Navbar from "../src/components/Navbar"
+import MovieCard from "../src/components/MovieCard"
 
 
 
@@ -8,7 +8,7 @@ export default function Home() {
     <>
 
       <Navbar/>
-      <BestMovies/>  
+      <MovieCard/>  
       
     </>
   )
