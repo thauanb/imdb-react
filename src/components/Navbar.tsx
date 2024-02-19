@@ -1,13 +1,13 @@
 import {HomeIcon} from "@radix-ui/react-icons"
 import { Input } from "@/components/ui/input"
-import { useState } from "react"
+import { KeyboardEvent, useState } from "react"
 import {  useNavigate } from "react-router-dom";
 
 export default function Navbar(){
   const [search , setSearch] = useState('')
   const navigate = useNavigate();
 
- const handleSubmit = function(e){
+ const handleSubmit = function(e: KeyboardEvent<HTMLInputElement>){
 
     e.preventDefault()
     if (!search) return

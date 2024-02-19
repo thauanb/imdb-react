@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
+    "jsx": "react-jsx", // Definindo o compilador do JSX como react-jsx
 
     /* Linting */
     "strict": true,
