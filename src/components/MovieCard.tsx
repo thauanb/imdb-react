@@ -2,7 +2,7 @@ import { useEffect , useState } from "react"
 import MovieStatus from "./MovieStatus"
 
 const movieURL = import.meta.env.VITE_API
-const apiKey = import.meta.env.VITE_API_KWY
+const apiKey = import.meta.env.VITE_API_KEY
 const imageBase = "https://image.tmdb.org/t/p/w500/"
 
 
