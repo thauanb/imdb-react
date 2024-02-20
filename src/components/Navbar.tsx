@@ -17,7 +17,7 @@ export default function Navbar(){
 
   return(
     <div className="flex items-center justify-between w-full h-20 gap-10 p-6 border rounded">
-    <a href="/" target="_blank" >
+    <a href="/" target="_self" >
       <HomeIcon className="h-[32px] w-[32px]"/>
     </a>
     <form>
